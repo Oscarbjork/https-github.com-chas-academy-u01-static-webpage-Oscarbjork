@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+/*.nav::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}*/
+
+img {
+    display: flex;
+    width: 40px;
+    border-radius: 50px;
+    top: 0;
+    cursor: pointer;
+}
+
+
+
+.nav ul li {
+    font-size: 1.3rem;
+}
+
+.nav ul li a {
+    color: peru;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/*a.active,a:hover{
+    background-color:rgb(121, 116, 116);
+    transition: .5s;
+}*/
+
+
+@media screen and (max-width:600px) {
+    nav ul {
+        list-style: none;
+    }
+}
+
+@media screen and (min-width:600px) {
+    nav ul {
+        display: flex;
+        list-style: none;
+
+    }
+}
+
+
+
+/*sektion för första sidan*/
+
+#hem {
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+    justify-content: center;
+    align-items: center;
+}
+
+#hem::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(bbb.webp)no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.rubrik1 {
+    color: peru;
+    font-size: 2rem;
+    font-family: monospace;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 3px #77043e, 0 0 5px #4b0c2bd8;
+}
+
+.linje1 {
+    width: 190px;
+    height: 4px;
+    background: peru;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 3px 5px 15px peru;
+}
+
+.span1 {
+    text-shadow: 0 0 3px peru, 0 0 5px peru;
+    color: #77043e;
+}
+
+/* nå mig knapp*/
+.knapp {
+    padding: 10px 35px;
+    margin: 10px;
+    background-color: transparent;
+    border: 1px solid hsl(330, 93%, 24%);
+    color: peru;
+    text-shadow: 0 0 3px #8f481e, 0 0 5px #a76d15dc;
+    outline: none;
+    transition: .5s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(to right, #030200 0%, #77043e 100%);
+}
+
+.knapp:hover {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 3px #f8f8f8, 0 0 5px #c0c0c0dc;
+}
+
+
+
+/*Om mig sktion*/
+
+#om {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin-bottom: 0%;
+    height: 100%;
+    /*background: linear-gradient(to left, #030200 40%, #77043e 100%);*/
+    background: linear-gradient(to right, #797774 40%, #793456 100%);
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+#intro h2 {
+    font-size: 40px;
+    color: peru;
+    text-shadow: 0 0 3px #ff0683, 0 0 5px #ca0869d8;
+}
+
+#intro h3 {
+    color: #000000;
+    font-size: 20px;
+}
+
+#om p {
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: rgb(201, 188, 188);
+}
+
+/*Mina utbildningar*/
+
+#utbildningar {
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(to right, #030200 40%, #77043e 100%);*/
+    background: linear-gradient(to right, #797774 40%, #793456 100%);
+}
+
+.rubrik2 {
+    display: flex;
+    color: peru;
+    text-shadow: 0 0 3px #77043e, 0 0 5px #4b0c2bd8;
+    font-size: 30px;
+    font-weight: 600px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.skolor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skolor img {
+    width: 220px;
+    height: 240px;
+    border-radius: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.skolor img:hover {
+    background-color: #77043e;
+    cursor: pointer;
+    box-shadow: 0 0 13px #cd853f, 0 0 5px #c2772c;
+}
+
+/*table section*/
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.div1 {
+    overflow-x: auto;
+}
+
+.table thead {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    background-color: rgb(128, 128, 128);
+    color: #000000;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid peru;
+}
+
+.table tbody tr td {
+    border: 1px solid gray;
+    background-color: #f8f8f8;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.video{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right, #797774 40%, #793456 100%);
+}
+
+/*kunskap --> progrssbar*/
+
+#kunskap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    /*background: linear-gradient(to left, #030200 40%, #77043e 100%);*/
+    background: linear-gradient(to right, #797774 40%, #793456 100%);
+    margin: 0;
+    padding: 0;
+    height: 60vh;
+}
+
+.skill {
+    height: 300px;
+    width: 600px;
+}
+
+.rubrik3 {
+    display: flex;
+    color: peru;
+    text-shadow: 0 0 3px #77043e, 0 0 5px #4b0c2bd8;
+    font-size: 30px;
+    font-weight: 600px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.rad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0px;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(49, 47, 47));
+    box-shadow: 2px 2px 5px 2px rgba(212, 101, 27, 0.527);
+    align-items: center;
+    padding: 6px 3%;
+}
+
+.p1 {
+    color: #77043e;
+}
+
+span {
+    color: peru;
+}
+
+.rad:hover {
+    font-size: 30px;
+    transition: .6s;
+
+}
+
+
+/*Mina tjänster*/
+
+#tjenster {
+    display: grid;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(to right, #797774 40%, #793456 100%);
+}
+
+#tjenster p {
+    color: rgb(189, 186, 186);
+}
+
+.rubrik4 {
+    margin: 4rem;
+    display: flex;
+    color: peru;
+    text-shadow: 0 0 3px #77043e, 0 0 5px #4b0c2bd8;
+    font-size: 20px;
+    font-weight: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rader {
+    display: grid;
+    box-sizing: border-box;
+    padding-left: 3px;
+    justify-items: center;
+}
+
+.rutor {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 15px;
+    align-items: center;
+    text-align: justify;
+    padding: 20px 35px;
+    border-radius: 25px;
+    background: linear-gradient(to top, rgb(26, 23, 24)50%, rgba(133, 19, 82, 0.973));
+}
+
+.rutor:hover {
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(206, 120, 8);
+}
+
+.knapp2 {
+    background-color: rgba(99, 143, 172, 0);
+    color: peru;
+    /*kolla denna igen*/
+}
+
+/* KOntakta mig formulär*/
+
+
+#kontakt {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #797774 40%, #793456 100%);
+    color: rgb(204, 132, 38);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rubrik5 {
+    display: flex;
+    color: peru;
+    text-shadow: 0 0 3px #77043e, 0 0 5px #4b0c2bd8;
+    font-size: 30px;
+    font-weight: 600px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.ipg {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input,
+textarea {
+    padding: 7px;
+    outline: rgb(184, 98, 19);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    cursor: text;
+    transition: 0.6s;
+}
+
+.button1 {
+    padding: 10px 0;
+    color: rgb(5, 48, 75);
+    outline: 3px ridge rgba(0, 0, 0, 0.5);
+    width: 80px;
+    border: 1px solid peru;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+
+#message {
+    width: 100%;
+}
+
+
+/*special funktion*/
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -35px;
+    font-size: 13px;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: peru;
+    font-weight: bold;
+}

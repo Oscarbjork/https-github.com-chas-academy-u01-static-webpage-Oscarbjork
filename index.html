@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);">
+    <title>Min portfolio</title>
+</head>
+
+<body>
+    <!--navigering-->
+    <nav class="nav">
+        <img src="logo.jpeg" alt="logga">
+        <ul>
+            <li><a href="#hem">Hem</a></li>
+            <li><a href="#om">Om</a></li>
+            <li><a href="#utbildningar">utbildningar</a></li>
+            <li><a href="#kunskap">Kunskap</a></li>
+            <li><a href="#tjenster">tjänster</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- första sida text-->
+    <section id="hem">
+        <h1 class="rubrik1">Oscar Björk</h1>
+        <div class="linje1"></div>
+        <h2 class="rubrik2">Fullstack Webbutvecklare</h2>
+        <br>
+    </section>
+
+    <!--Om mig-->
+    <section id="om">
+        <div id="intro">
+            <h2>Vem är jag?</h2>
+            <hr>
+            <h3>Fullstack Webbdeveloper</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis eligendi minima cum dicta, eum
+                vel suscipit corporis quia eius itaque obcaecati repellat sunt quae placeat! Obcaecati perspiciatis
+                autem sint?
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni numquam iste iusto possimus nam
+                consequatur doloribus sunt placeat, consequuntur, ipsa error itaque illum repellendus omnis deserunt ab
+                excepturi corporis laudantium officiis minus commodi ipsam laboriosam? Enim dolore accusantium
+                consequatur laudantium quaerat porro, modi fugiat ratione ullam illum soluta magni exercitationem?
+                Dolorem eos repudiandae aperiam officia. Reprehenderit porro animi impedit praesentium perferendis
+                inventore dignissimos at reiciendis sint officia asperiores accusamus modi illum, odio voluptates
+                voluptatibus aliquam expedita minima dolorem! Officia eius magni deleniti vitae perferendis deserunt nam
+                quas ad doloremque possimus consequuntur beatae dolore sint necessitatibus tempora, saepe repellendus
+                voluptatum.
+            </p>
+        </div>
+    </section>
+
+    <!--Mina utbilddningar + table-->
+
+    <section id="utbildningar">
+        <h1 class="rubrik2">Detta har jag gjort</h1>
+        <div class="skolor">
+            <img src="sjöllan.jpeg" alt="Sjölins">
+            <img src="su.jpeg" alt="SU">
+            <img src="chas.jpeg" alt="Chas academy">
+        </div>
+        <div class="div1">
+            <table class="table">
+                <thead class="table">
+                    <tr class="tr">
+                        <td>Började</td>
+                        <td>Slutade</td>
+                        <td>Utbildningsform</td>
+                        <td>Skola</td>
+                        <td>status</td>
+                        <td>Betyg</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Start datum">20 aug 2015</td>
+                        <td data-label="slut datum">25 jun 2018</td>
+                        <td data-label="Utbildningsform">Ekonomi/Ekonomi</td>
+                        <td data-label="skola">Sjölins gymnasium</td>
+                        <td data-label="status"> <span class="text_open1">Avslutad</span></td>
+                        <td data-label="#"><a>Visa omdömme</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Start datum">5 sep 2020</td>
+                        <td data-label="slut datum">20 jun 2023</td>
+                        <td data-label="Utbildningsform">Finansiell Ekonomi</td>
+                        <td data-label="skola">Stockholms universitet </td>
+                        <td data-label="status"> <span class="text_open2">Pausad</span></td>
+                        <td data-label="#"><a>Visa omdömme</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Start datum">5 sep 2022</td>
+                        <td data-label="slut datum">25 jun 2024</td>
+                        <td data-label="Utbildningsform">Fulltack web development</td>
+                        <td data-label="skola">Chas Academy YH-utbildning</td>
+                        <td data-label="status"> <span class="text_open3">Pågående</span></td>
+                        <td data-label="#"><a>Visa omdömme</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/VDxdJrQT6n4" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="kunskap">
+        <div class="skill">
+            <span class="rubrik3">Kunskapsnivåer</span>
+
+            <div class="rad">
+                <label class="label" for="html"></label>
+                <progress id="html" value="88" max="100"></progress>
+                <p class="p1">HTML</p>
+                <span>88%</span>
+            </div>
+            <div class="rad">
+                <label for="css"></label>
+                <progress id="css" value="77" max="100"></progress>
+                <p class="p1">CSS</p>
+                <span>77%</span>
+            </div>
+            <div class="rad">
+                <label for="ux/ui"></label>
+                <progress id="uxui" value="15" max="100"></progress>
+                <p class="p1">UX/UI</p>
+                <span>15%</span>
+            </div>
+            <div class="rad">
+                <label for="js"></label>
+                <progress id="js" value="25" max="100"></progress>
+                <p class="p1">JS</p>
+                <span>25%</span>
+            </div>
+            <div class="rad">
+                <label for="php"></label>
+                <progress id="php" value="10" max="100"></progress>
+                <p class="p1">PHP</p>
+                <span>10%</span>
+            </div>
+            <div class="rad">
+                <label for="humor"></label>
+                <progress id="humor" value="100" max="100"></progress>
+                <p class="p1">HUMOR</p>
+                <span>100%</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!--mina tjänster-->
+    <section id="tjenster">
+        <span class="rubrik4">Mina framtida tjänster</span>
+        <div class="rader">
+            <div class="rutor">
+                <h1 class="rubrik">front to Back</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit necessitatibus minima
+                    quisquam ipsum tempora dolorum repellat accusamus pariatur, illum vitae, voluptate iste iusto quod
+                    quibusdam hic debitis velit earum nihil quas modi? Recusandae scipit! Quae accusamus neque
+                    blanditiis quiaincidunt beatae amet optio repellendus expedita autem a doloribus sequi mollitia
+                    wrg</p>
+                <p><a class="knapp2" href="#">Läs mer</a></p>
+            </div>
+            <div class="rutor">
+                <h1 class="rubrik">UX/UI</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi fugit, tempora, eius molestiae
+                    dignissimos delectus quos amet impedit sed obcaecati aliquam magnam numquam nam soluta ea eaque
+                    ipsa. Itaque quos iste, tenetur voluptates dolor facere voluptas illum suscipit, modi saepe a
+                    impedit ut maiores cupiditate. Reprehenderit facilis modi placeat quidem enim porro nulla commodi
+                    quod iste, ,</p>
+                <p><a class="knapp2" href="#">Läs mer</a></p>
+            </div>
+            <div class="rutor">
+                <h1 class="rubrik">javaScript</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa eaque voluptatem quisquam, rem
+                    quia incidunt perspiciatis harum consequuntur non! Aspernatur voluptatem officia molestiae libero
+                    illum iste repellendus culpa quia rerum natus aliquid ipsum nemo est iusto ut ex nostrum
+                    voluptatibus error hic debitis corrupti accusantium, eius expedita nisi! Alias, sit. Suscipit nobis,
+                    odio cupiditate </p>
+                <p><a class="knapp2" href="#">Läs mer</a></p>
+            </div>
+            <div class="rutor">
+                <h1 class="rubrik">Web Dev</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit necessitatibus minima
+                    quisquam ipsum tempora dolorum repellat accusamus pariatur, illum vitae, voluptate iste iusto quod
+                    quibusdam hic debitis velit earum nihil quas modi? Recusandae delectus adipisci, sit eaque
+                    consequatur vero quos aspernatur voluptatem ipsa, iure, est aliquid nemo maiores eos veritatis
+                    temporibus porro qui </p>
+                <p class="knapp2"><a class="knapp2" href="#">Läs mer</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!--Kontakta mig-->
+
+    <section id="kontakt">
+        <h1 class="rubrik5">Kontakta mig</h1>
+        <form>
+            <div class="ipg">
+                <input type="text" id="name" required>
+                <label for="name">Ditt namn</label>
+            </div>
+            <div class="ipg">
+                <input type="text" id="number" required>
+                <label for="">mobilnummer</label>
+            </div>
+            <div class="ipg">
+                <input type="email" id="email" required>
+                <label for="">Din mail</label>
+            </div>
+            <div class="ipg">
+                <textarea id="message" rows="10" required></textarea>
+                <label for="message">meddelande till mig</label>
+            </div>
+            <button type="submit" class="button1">Skicka</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2022 Oscar Björk</p>
+    </footer>
+
+</body>
+
+</html>
